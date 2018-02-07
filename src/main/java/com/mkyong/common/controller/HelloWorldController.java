@@ -11,7 +11,7 @@ public class HelloWorldController extends AbstractController {
 	@Override
 	protected ModelAndView handleRequestInternal(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
-
+		System.out.println("this is some changes.");
 		ModelAndView model = new ModelAndView("HelloWorldPage");
 		model.addObject("msg", "hello world");
 
